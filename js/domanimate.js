@@ -2,7 +2,7 @@ var funcs = [],
     timer;
 
 funcs.push (function() { 
-    document.getElementsByTagName("BODY")[0].style.backgroundColor="#587058";
+    /* document.getElementsByTagName("BODY")[0].style.backgroundColor="#587058"; */
     document.getElementsByTagName("MAIN")[0].style.backgroundColor="#587058";
 });
 funcs.push (function() { document.getElementsByTagName("SECTION")[0].style.backgroundColor="#705858" });
