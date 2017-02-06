@@ -1,0 +1,240 @@
+html,body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+body {
+    background-color: #717171;
+    color: #272727;
+    font-size: 16px
+}
+
+nav, div, a, section, main {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Sheldon, please explain clearfix. */
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+main {
+    width: 100%;
+    background-color: #717171;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 32px; /* magic number, three locations */
+    z-index: -1; /* under the menu */
+}
+
+.spacer {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -64px; /* magic number, plus margin, plus padding */
+}
+
+nav {
+    background-color: #dcdcdc;
+    position: fixed;
+    width: 100%;
+    height: 32px; /* magic number */
+    margin: 0;
+    padding: 4px 0;
+    top: 0;
+}
+
+img {
+    width:100%;
+    /* get rid of 4 px under image 
+    supposidly reserved for decenders */
+    vertical-align: bottom;
+}
+
+.desk {
+    display: none;
+}
+
+nav a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 .8rem;
+}
+
+nav a:last-child {
+    padding: 0 .8rem 0 0 ;
+    float: right;
+}
+
+/* get rid of dotted outline  after click */
+a:focus {
+    outline: none;
+}
+
+/* mobile hamburger menu */
+.mL {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#mobileList {
+    position:fixed;
+    top: 32px; /* that magic number */
+    right: 0;
+}
+
+#mobileList a {
+    float: right;
+    clear: both;
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    font-size:1.5rem;
+    text-decoration: none;
+    padding: 4px .8rem;
+    border-top: 4px solid rgba(0,0,0,.3);
+    background: rgba(255,255,255,.8);
+}
+
+/* https://material.io/icons/ */
+nav a, .material-icons {
+    color: #587058;
+    vertical-align: bottom;
+}
+
+nav a:hover, .material-icons:hover {
+    color: #abdbab;
+}
+
+section {
+    background-color: #eee;
+    margin: 1rem 1rem 0 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+section h2 {
+    margin-top: .25em;
+}
+
+.jumbo img:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+/*
+    restaurant menu stuff
+    from Handcrafted CSS, p. 12-13
+*/
+ul.r_menu {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+ul.r_menu li {
+    display: block;
+    padding: 7px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    background-color: #ddd; 
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+ul.r_menu li span {
+    float: left;
+    width: 75%;
+}
+
+ul.r_menu li em {
+    float: right;
+    font-style: normal;
+    color: #272727;
+}
+/* end of restraunt menu */
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+
+    body {
+	background-color: #ababab;
+    }
+
+    main, nav {
+	width: 758px;
+	left: 50%;
+	transform: translate(-50%, 0);
+    }
+
+    .mobile {
+	display: none;
+    }
+
+    .desk {
+	display: block;
+    }
+
+    /* magic numbers */
+    main       { top: 46px; }
+    nav        { height: 46px; }
+    .spacer    { top: -78px; }
+    #mobileList {top: 46px; }
+
+    nav div div a {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1;
+	padding: 7px 0 0 1rem ;
+    }
+
+    nav a:last-child {
+	padding: 7px 1rem 0 0;
+    }
+
+
+    /* stuf to show the sections two up */
+    section {
+	float: left;
+	width: 355px;
+	margin-right: 0;
+	margin-bottom: 0;
+    }
+
+    section.jumbo, section:last-child {
+	float: left;
+	width: 726px;
+	margin-right: 1rem;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+    body {
+	background-image: url(../media/squires-background.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+    }
+
+    main, nav {
+	width: 982px;
+    }
+
+    /* stuf to show the sections three up */
+    section, section:last-child {
+	width: 306px;
+    }
+
+    section.jumbo {
+	width: 950px;
+    }
+
+}

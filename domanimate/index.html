@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Animation</title>
+  <!-- Google font for icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"> <!-- for icon font https://material.io/icons/ -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/domanimate.css">
+  <script src="../js/index.js"></script>
+</head>
+<body>
+<nav>
+  <div class="mobile">
+    <a href=".."><i class="material-icons">home</i></a>
+    <a onclick="toggleNav()" href="javascript:void(0);">
+      <i class="material-icons">menu</i></a>
+  </div> <!--mobile-->
+  <div class="desk">
+    <a href=".."><img src="../media/pl-logo.png" alt="Pure Lard"></a>
+    <div>
+      <a onclick="toggleNav()" href="javascript:void(0);">
+	<i class="material-icons">menu</i></a>
+    </div>
+  </div> <!--desk-->
+  <div id="mobileList" class="mL"> 
+    <a href="https://bobsol.github.io/nov10ex/">
+      fluid layouts</a>
+    <a href="https://bobsol.github.io/MobileFirstGallery/">
+      mobile first gallery</a>
+    <a href=".">
+      dom animation</a>
+  </div> <!--mobileList-->
+</nav>
+<main class="clear">
+  <section class="jumbo">
+    <p id="my">I love javascript.</p>
+    <p>I don't know why.</p>
+    <img id="car" src="https://blog.caranddriver.com/wp-content/uploads/2015/11/Audi-Q5.jpg">
+  </section>
+</main>
+<script src="../js/domanimate.js"></script>
+</body>
+</html>

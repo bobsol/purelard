@@ -1,0 +1,233 @@
+ html,body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+body {
+    background-color: #717171;
+    color: #272727;
+    font-size: 16px
+}
+
+nav, div, a, section main {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Sheldon, please explain clearfix. */
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+main {
+    width: 100%;
+    background-color: #717171;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 32px; /* magic number, three locations */
+    z-index: -1; /* under the menu */
+}
+
+.spacer {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -64px; /* magic number, plus margin, plus padding */
+}
+
+nav {
+    background-color: #dcdcdc;
+    position: fixed;
+    width: 100%;
+    height: 32px; /* magic number +1px fudge */
+    margin: 0;
+    padding: 4px 0;
+    top: 0;
+    /* center left to right in body */
+    /* left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    */
+}
+
+img {
+    width:100%;
+    /* get rid of 4 px under image 
+    supposidly reserved for decenders */
+    vertical-align: bottom;
+}
+
+nav div { /* container */
+    width: 100%;
+    /*
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    */
+}
+
+nav a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 .8rem;
+    /* font-size: .8rem; */
+    font-weight:600;
+    text-decoration: none;
+}
+
+nav>a:first-child {
+    /* the first one in the nav, not the div */
+    display: none;
+}
+
+.d-t { /* hide desktop menu */
+    display: none; 
+}
+
+nav a:last-child>i {
+    display: block;
+    padding-right: 1rem;
+    position: absolute;
+    right: 0;
+}
+
+/* https://material.io/icons/ */
+/* nav a, */ .material-icons {
+    color: #587058;
+    vertical-align: bottom;
+}
+
+nav a:hover, .material-icons:hover {
+    color: #abdbab;
+}
+
+section {
+    background-color: #eee;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+section h2 {
+    margin-top: .5em
+}
+
+.jumbo img:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+/*
+    restaurant menu stuff
+    Idea from Handcrafted CSS, c. 1
+*/
+ul.r_menu {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+ul.r_menu li {
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #ddd;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+ul.r_menu li span {
+    float: left;
+    width: 75%;
+}
+
+ul.r_menu li em {
+    float: right;
+    font-style: normal;
+    color: #272727;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+	background-color: #ababab;
+    }
+
+    main, nav {
+	width: 758px;
+    }
+
+    nav>a:first-child {
+	/* the first one in the nav, not the div */
+	width: 30%;
+	display: block;
+	/* center in height */
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+    }
+
+    .d-t { /* show desktop menu */
+	display: block;
+    }
+
+    nav div { /* container */
+	width: 70%;
+    }
+
+    nav a {
+	font-size: 1.5rem;
+    }
+
+    .jumbo img:nth-child(2), .material-icons {
+	display: none;
+    }
+
+    nav>div>a:last-child>i {
+	display: block;
+    }
+
+    /* stuf to show the sections two up */
+    section {
+	float: left;
+	width: 323px;
+	margin-right: 0;
+	margin-bottom: 0;
+    }
+
+    section.jumbo, section:last-child {
+	float: left;
+	width: 694px;
+	margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+	background-image: url(../media/squires-background.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+    }
+
+    main, nav {
+	width: 982px;
+    }
+
+    /* stuf to show the sections three up */
+    section, section:last-child {
+	width: 274px;
+    }
+
+    section.jumbo {
+	width: 918px;
+    }
+
+}

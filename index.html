@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan 05: Pure Lard</title>
+  <!-- Google font for icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"> <!-- for icon font https://material.io/icons/ -->
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+<nav>
+  <div class="mobile">
+    <a href="#top"><i class="material-icons">home</i></a>
+    <a href="#about"><i class="material-icons">help</i></a>
+    <a href="#menu"><i class="material-icons">restaurant_menu</i></a> 
+    <a href="#location"><i class="material-icons">directions</i></a>
+    <!-- <a href="https://bobsol.github.io/nov10ex/"> -->
+    <a onclick="toggleNav()" href="javascript:void(0);">
+      <i class="material-icons">menu</i></a>
+  </div> <!--mobile-->
+  <div class="desk">
+    <a href="#top"><img src="media/pl-logo.png" alt="Pure Lard"></a>
+    <div>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Find Us</a>
+      <a onclick="toggleNav()" href="javascript:void(0);">
+	<i class="material-icons">menu</i></a>
+    </div>
+  </div> <!--desk-->
+  <div id="mobileList" class="mL"> 
+    <a href="https://bobsol.github.io/nov10ex/">
+      fluid layouts</a>
+    <a href="https://bobsol.github.io/MobileFirstGallery/">
+      mobile first gallery</a>
+    <a href="domanimate/">
+      dom animation</a>
+  </div> <!--mobileList-->
+</nav>
+<main class="clear">
+  <section class="jumbo">
+    <div class="spacer" id="top"></div>
+    <img class="mobile" src="media/pl-logo.png" alt="Pure Lard"></a>
+    <img src="media/all-you-need.jpg" alt="all you need is">
+  </section>
+  <section>
+    <div class="spacer" id="about"></div>
+    <h2>Why Lard?</h2>
+    <p>Does vegan food make you queasy? Well read on...</p>
+    <p>Lard is commonly used in many cuisines around the world as a
+    cooking fat or shortening, or as a spread similar to butter. It
+    is an ingredient in various savoury dishes such as sausages,
+    pates and fillings, and it is particularly favored for the
+    preparation of pastry because of the "flakiness" it brings to
+    the product. Its use in western contemporary cuisine has
+    diminished with the increased popularity of vegetable oils, but
+    many contemporary cooks and bakers still favor it over other
+    fats for certain select uses. The culinary qualities of lard
+    vary somewhat depending on the part of the pig from which the
+    fat was taken and how the lard was processed.</p><!--fill from
+    wikipedia -->
+  </section>
+  <section>
+    <div class="spacer" id="menu"></div>
+    <h2>Our Menu</h2>
+    <p>We serve the kind of food items that will make
+    America great again.  You can snack or put together a sumptious meal.</p>
+    
+    <p>This section is a demo of a method of formatting a price list, menu or
+    table of contents with left and right floats so that the price stays in the
+    upper right, no matter how many words are in the description. I read about
+    this method in an old 2010 book, <cite>Handcrafted CSS</cite>.</p>
+    <ul class="r_menu">
+      <li><span>Apple Pie</span><em>5.79</em></li>
+      <li><span>Collard Greens</span><em>5.99</em></li>
+      <li><span>Lard Fried Artichoke Hearts</span><em>10.99</em></div></li>
+      <li><span>Grandma's Homemade Biscuits</span><em>2.19</em></div></li>
+      <li><span>Mexican Tamales</span><em>4.49</em></div></li>
+      <li><span>Seasonal Vegetables Roasted in Lard</span>
+	<em>16.26</em></div></li>
+    </ul>
+  </section>
+  <section>
+    <div class="spacer" id="location"></div>
+    <h2>Our Location</h2>
+    <p>Pure Lard is located just a mile south of the water tank.</p>
+    <img src="media/nyc-space.jpg" alt="map of lower nyc from spaaaaace">
+  </section>
+</main>
+</body>
+</html>
