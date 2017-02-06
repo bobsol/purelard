@@ -75,6 +75,9 @@ nav a:last-child {
 /* get rid of dotted outline  after click */
 a:focus {
     outline: none;
+}
+
+a:active {
     color: #587058;
 }
 
