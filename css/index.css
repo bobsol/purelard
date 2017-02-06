@@ -120,6 +120,7 @@ section {
     margin: 1rem 1rem 0 1rem;
     padding: 1rem;
     border-radius: 1rem;
+	float: left;
 }
 
 section h2 {
@@ -187,7 +188,7 @@ ul.r_menu li em {
     nav        { height: 46px; }
     .spacer    { top: -78px; }
     #mobileList {top: 46px; }
-
+    
     nav div div a {
 	font-size: 1.5rem;
 	font-weight: bold;
