@@ -77,10 +77,6 @@ a:focus {
     outline: none;
 }
 
-a:active {
-    color: #587058;
-}
-
 /* mobile hamburger menu */
 .mL {
     display: none;
