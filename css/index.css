@@ -75,6 +75,7 @@ nav a:last-child {
 /* get rid of dotted outline  after click */
 a:focus {
     outline: none;
+    color: #587058;
 }
 
 /* mobile hamburger menu */
