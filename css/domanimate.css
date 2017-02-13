@@ -3,3 +3,10 @@ p {
     color: #dcdcdc;
     font-weight: 600;
 }
+
+img {
+    max-width: 323px;
+    display: block;
+    margin: 0 auto 0 auto;
+    float: none;
+}

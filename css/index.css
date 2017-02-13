@@ -47,6 +47,7 @@ nav {
     margin: 0;
     padding: 4px 0;
     top: 0;
+    
 }
 
 img {
@@ -120,7 +121,7 @@ section {
     margin: 1rem 1rem 0 1rem;
     padding: 1rem;
     border-radius: 1rem;
-	float: left;
+    float: left;
 }
 
 section h2 {
@@ -174,7 +175,7 @@ ul.r_menu li em {
 	left: 50%;
 	transform: translate(-50%, 0);
 	-webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
     }
 
     .mobile {
