@@ -1,12 +1,26 @@
-p {
+p, li {
     visibility: hidden;
-    color: #dcdcdc;
     font-weight: 600;
 }
 
-img {
-    max-width: 323px;
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+main img {
     display: block;
-    margin: 0 auto 0 auto;
-    float: none;
+}
+
+#b {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 323px;
+  margin: 0 auto 0 auto;
+  clear: both;
 }
