@@ -27,7 +27,10 @@ timer = setInterval(function() {
     }
 }, 2000);
 
-function fade (firstObject, secondObject, fadeTime=5000) {
+function fade (firstObject, secondObject, fadeTime) {
+    if (fadeTime === undefined) {
+        fadeTime = 5000;
+    }
     var count = 1,
     timer = setInterval(function() {
       /* step the fade */
