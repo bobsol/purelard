@@ -3,12 +3,10 @@ var funcs = [],
 
 funcs.push (function() { 
     document.getElementById("my").style.visibility="visible";
-    document.getElementsByTagName("li")[0].style.visibility="visible";
 });
 
 funcs.push (function() { 
     document.getElementsByTagName("MAIN")[0].style.backgroundColor="#587058"; 
-    document.getElementsByTagName("li")[1].style.visibility="visible";
 });
 
 funcs.push (function() { 
